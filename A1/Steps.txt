@@ -1,0 +1,10 @@
+Download image
+grab screenshots for characters
+invert color
+selective coloring
+levels
+black & white
+contrast
+filter->blur
+
+	
