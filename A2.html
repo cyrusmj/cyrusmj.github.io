@@ -21,57 +21,66 @@
 
         
         
-        <h3> 2) Using Rhino and Cura create, print, and document the following tests: <br />
+        <h3> 2) Using Rhino and Cura create, print, and document the following tests:</h3>
         - A 2cm cube with the standard 'low quality' settings and a brim <br />
         - A 2cm cube with the standard 'standard quality' settings and a brim <br />
         - A 2cm cube with the standard 'high quality' settings and a brim <br />
-        - A 2cm cube with a concentric top and bottom layer <br /> </h3>
+        - A 2cm cube with a concentric top and bottom layer <br /> <br />
         
-        I decided to create my shapes based on the PacMan game characters, so first step was importing this PacMan family photo! <br />
-        <img src="A1/SS/Family-0.png" height="400" align="middle">  
-        <br />
-        <br />
-        
-        From here, I blew up the image size, grabbed screenshots of my favorite characters, and imported them into Adobe Illustrator shown below:<br />
-        <img src="A1/SS/Pacman-0.png" height="400" align="middle"> 
-        <img src="A1/SS/Blinky-0.png" height="400" align="middle">         
-        <img src="A1/SS/Weird-0.png" height="400" align="middle"> 
-        <br />
-        <br />
-        
-        I continued that by turning the images to B&W and tracing them like shown below. <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/Ai  style ="color:#FF7733"> Adobe illustrator files</a> <br />
-        Micro steps taken here were: Invert color + Selective coloring + Levels + B&W + Contrast + Filter->Blur + Image trace<br />
-        <img src="A1/SS/Pacman-2.png" height="400" align="middle"> 
-        <img src="A1/SS/Blinky-2.png" height="400" align="middle">         
-        <img src="A1/SS/Weird-2.png" height="400" align="middle"> 
+        I began this section by designing a simple cube in <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/3dm style ="color:#FF7733"> Rhino</a>, exported it to <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/stl style ="color:#FF7733"> .stl</a>, and imported to Cura, where I changed the quality, added a brim, and at the end printed one with standard setting and changed the infill to concentric <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/gcode style ="color:#FF7733"> gcodes here</a>! <br />
+        All printed with a total time matching the Cura predicted time + (2-4) min, which I attributed to the warm up time for bed and nozzle. <br />
+        Interestingly, as I increased the quality, actual print size seemed to get closer to the designed amount. <br />
+        Times: <br />
+        - Low quality cube: Cura = 20 min, Actual = 23 min <br />
+        <img src="A2/images/Low.png" height="400" align="middle"> <br /><br />
+        - Standard quality cube: Cura = 24 min, Actual = 28 min <br />
+        <img src="A2/images/Med.png" height="400" align="middle"> <br /><br />
+        - High quality cube: Cura = 43 min, Actual = 47 min <br />
+        <img src="A2/images/High.png" height="400" align="middle"> <br /><br />
+        - Standard Concentric Cube: Cura = 24 min, Actual 27 min <br />
+        <img src="A2/images/MedConc.png" height="400" align="middle"> <br /><br />
         <br />
         <br />
         
-        Once the images were traced, I exported them as <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/dxf  style ="color:#FF7733"> dxf files</a> to use in Rhino! They looked like these in Rhino:
-        <br />
-        <img src="A1/SS/Pacman-3.png" height="400" align="middle"> 
-        <img src="A1/SS/Blinky-3.png" height="400" align="middle">         
-        <img src="A1/SS/Weird-3.png" height="400" align="middle">    
-        <br />
-        <br />
-    
-        But I somehow didn’t like how they turned out with the pixelated look, so I “exploded” and “Rebuilt” my models with fewer points and started moving the curves around to create some interesting shapes that I liked. <br /> 
-        Once I was happy with everything I turned them into solid models files shown here:
-        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/3dm style ="color:#FF7733"> 3dm files</a> and 
-        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/stl  style ="color:#FF7733"> .stl files</a>
-        <br />
-        <img src="A1/SS/Pacman-4.png" height="400" align="middle">  
-        <img src="A1/SS/Blinky-4.png" height="400" align="middle">         
-        <img src="A1/SS/Weird-4.png" height="400" align="middle">  
+        
+        - A tube 2cm in diameter and .5cm high with a single extrusion wall thickness<br />
+        - A tube 2cm in diameter and .5cm high with a double extrusion wall thickness and random z-seam alignment <br /> <br />
+        
+        Once I was happy with my cubes, I proceeded to design the tube in <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/3dm style ="color:#FF7733"> Rhino</a>,, exported it to <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/stl style ="color:#FF7733"> .stl</a>, and imported to Cura, where I changed Wall Line Count to 1, and then to 2 and set Z-Seam Alignment to Random to create these <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/gcode style ="color:#FF7733"> gcodes</a>. <br />
+        Both prints were done within 4 min tolerance of the expected time, which was due to the warm up time.<br />
+        One interesting observation was that the actual measurement seemed to get closer to the designed diameter, but I couldn’t take very accurate measurements here since print was very thin! <br />
+        
+        Times: <br />
+        - Single extrusion tube: Cura = 2 min, Actual= 6 min<br />
+        <img src="A2/images/SingleRing.png" height="400" align="middle"> <br /><br />
+        - Double extrusion tube: Cura = 4min, Actual= 8 min<br />
+        <img src="A2/images/DoubleRing.png" height="400" align="middle"> <br /><br />
         <br />
         <br />
         
-        And now they’re 3 happy cookie cutters ready to be 3D printed. Here's a picture of them posing for another family photoshoot!<br />
-        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/stl/PACMAN-CC.stl  style ="color:#FF7733"> Here's a link</a> to the family photo file for your download :) 
+        - A tube 2cm in diameter and .5cm high with a single extrusion wall thickness<br />
+        - A tube 2cm in diameter and .5cm high with a double extrusion wall thickness and random z-seam alignment <br /> <br />
+        
+        For this step I decided to fill my 3D model in <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/3dm style ="color:#FF7733"> Rhino</a>, exported it to <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/stl style ="color:#FF7733"> .stl</a> twice with the tolerance instructions noted above, opened in Cura and turned the first model on its side and added supports. <br />
+        Similar to the previous prints, print times were very close, but rotated print took more than double the time to print compared to the normal cylinder due to its print structure. <br/> 
+        
+        Times: <br />
+        - Standard Cylinder: Cura = 7 min, Actual = 9 min <br/>
+        <img src="A2/images/Cyl.png" height="400" align="middle"> <br /><br />
+        - Side Rotated Cylinder with higher tolerance: Cura 19 min, Actual = 22 min <br/>
+        <img src="A2/images/CylHighTol.png" height="400" align="middle"> <br /><br />
         <br />
-        <img src="A1/SS/Family-4.png" height="400" align="middle">  
         <br />
-		</p>			
+        
+        <h3>3) After we ensure our 3D printer is calibrated and works properly using the steps above, we were tasked to design and print a 20.0mm +/- 0.5mm cube with a 5.0mm +/- 0.5mm hole through it.</h3>
+        I was able to finally design this piece in <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/3dm style ="color:#FF7733"> Rhino</a>, get it sliced in Cura by exporting to <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/stl style ="color:#FF7733"> .stl</a>, and print it <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A2/gcode style ="color:#FF7733"> (gcode)</a> without issues on the first try! <br /> 
+        Again, time was in the same (2-4) min as noted above, so it took 32 min to print when the expected print time was 30 min. <br />
+        <img src="A2/images/CubeWHole.png" height="400" align="middle"> <br /><br />
+        <br />
+        Finally they all posed for an A2 Family Photo!!<br/>
+        <img src="A2/images/Fam.png" height="400" align="middle"> <br /><br />
+        
+        </p>			
 		<br />
     <br />
     <br />
