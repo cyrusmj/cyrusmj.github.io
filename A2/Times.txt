@@ -1,0 +1,11 @@
+Tube 1 wall: 2min -> 6min
+Tube 2 wall: 4min -> 8min
+Cube: 7min -> 10min
+Low Cube: 20min -> 23min
+Std Cube: 24min -> 28min
+Hig Cube: 43min -> 47min
+Std Conc Cube: 24 min -> 27min
+Cube w hole: 30min -> 32 min
+Std Cyl: 7 min -> 9 min
+Side Cyl: 19 min -> 22 min
+

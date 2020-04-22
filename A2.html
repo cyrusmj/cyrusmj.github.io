@@ -1,17 +1,79 @@
-<!DOCTYPE html> 
 <html> 
     <head>
-     
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
         <body style="color:#FFF7CC;background-color:#00264D;font-family:futura">
-        <title> A2 </title> 
-        <h1 style="text-align: center;">Oh no ... So empty ... </h1> 
+        <title> A2:Getting Started With 3D Printing </title> 
+        <h1 style="text-align: center;">Getting Started With 3D Printing</h1> 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
     </head> 
     <body> 
-    <img src="Bojack.jpeg" width="400" align="middle">
+	<p>
+        For this assignment we were tasked to:<br /><br />
+        <h3> 1) Assemble our 3D printers and document the process here: </h3>
+        In order to assemble my 3D printer (Creality Ender Pro 5 with Silent Board), I watched <a href=https://www.youtube.com/watch?v=V5ZGnME7JNw  style ="color:#FF7733"> this YouTube video</a>, and followed the process noted in the manual (2hrs). <br />
+        I proceeded by printing several failed attempts of <a href=https://www.thingiverse.com/thing:4130721 style ="color:#FF7733"> this test patterns</a> that I thought were due to bed leveling, loose screws, and improper extrusion (3hrs)!<br /> 
+        Once I was able to print a bed level test, I wanted to print the pre-loaded lucky cat! Several hours of failed attempts and browsing Reddit later, I realized that my 3D printer needs a firmware update to change zstep/mm to 800, and fix several other bugs, but I didn’t have a Mini-USB … Who uses Mini-USB anymore Creality?!? <br />
+        Many hours (4+) later, I happily printed the lucky cat model (some failed attempts next to my lucky print). <br /><br />
+        <img src="A2/images/LuckyCat.png" height="400" align="middle">  
+        <br />
+        <br />
+
+        
+        
+        <h3> 2) Using Rhino and Cura create, print, and document the following tests: <br />
+        - A 2cm cube with the standard 'low quality' settings and a brim <br />
+        - A 2cm cube with the standard 'standard quality' settings and a brim <br />
+        - A 2cm cube with the standard 'high quality' settings and a brim <br />
+        - A 2cm cube with a concentric top and bottom layer <br /> </h3>
+        
+        I decided to create my shapes based on the PacMan game characters, so first step was importing this PacMan family photo! <br />
+        <img src="A1/SS/Family-0.png" height="400" align="middle">  
+        <br />
+        <br />
+        
+        From here, I blew up the image size, grabbed screenshots of my favorite characters, and imported them into Adobe Illustrator shown below:<br />
+        <img src="A1/SS/Pacman-0.png" height="400" align="middle"> 
+        <img src="A1/SS/Blinky-0.png" height="400" align="middle">         
+        <img src="A1/SS/Weird-0.png" height="400" align="middle"> 
+        <br />
+        <br />
+        
+        I continued that by turning the images to B&W and tracing them like shown below. <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/Ai  style ="color:#FF7733"> Adobe illustrator files</a> <br />
+        Micro steps taken here were: Invert color + Selective coloring + Levels + B&W + Contrast + Filter->Blur + Image trace<br />
+        <img src="A1/SS/Pacman-2.png" height="400" align="middle"> 
+        <img src="A1/SS/Blinky-2.png" height="400" align="middle">         
+        <img src="A1/SS/Weird-2.png" height="400" align="middle"> 
+        <br />
+        <br />
+        
+        Once the images were traced, I exported them as <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/dxf  style ="color:#FF7733"> dxf files</a> to use in Rhino! They looked like these in Rhino:
+        <br />
+        <img src="A1/SS/Pacman-3.png" height="400" align="middle"> 
+        <img src="A1/SS/Blinky-3.png" height="400" align="middle">         
+        <img src="A1/SS/Weird-3.png" height="400" align="middle">    
+        <br />
+        <br />
+    
+        But I somehow didn’t like how they turned out with the pixelated look, so I “exploded” and “Rebuilt” my models with fewer points and started moving the curves around to create some interesting shapes that I liked. <br /> 
+        Once I was happy with everything I turned them into solid models files shown here:
+        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/3dm style ="color:#FF7733"> 3dm files</a> and 
+        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/stl  style ="color:#FF7733"> .stl files</a>
+        <br />
+        <img src="A1/SS/Pacman-4.png" height="400" align="middle">  
+        <img src="A1/SS/Blinky-4.png" height="400" align="middle">         
+        <img src="A1/SS/Weird-4.png" height="400" align="middle">  
+        <br />
+        <br />
+        
+        And now they’re 3 happy cookie cutters ready to be 3D printed. Here's a picture of them posing for another family photoshoot!<br />
+        <a href=https://github.com/cyrusmj/cyrusmj.github.io/tree/master/A1/stl/PACMAN-CC.stl  style ="color:#FF7733"> Here's a link</a> to the family photo file for your download :) 
+        <br />
+        <img src="A1/SS/Family-4.png" height="400" align="middle">  
+        <br />
+		</p>			
+		<br />
+    <br />
     <br />
 	<br />
     <a href="index.html" style ="color:#FF7733; text-align:center"><h2>Back to home</h2>
