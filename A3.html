@@ -1,17 +1,52 @@
-<!DOCTYPE html> 
 <html> 
     <head>
-     
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
         <body style="color:#FFF7CC;background-color:#00264D;font-family:futura">
-        <title> A3 </title> 
-        <h1 style="text-align: center;">Oh no ... So empty ... </h1> 
+        <title> A3:Getting started with Grasshopper</title> 
+        <h1 style="text-align: center;">Getting started with Grasshopper</h1> 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-
     </head> 
     <body> 
-    <img src="Bojack.jpeg" width="400" align="middle">
+	<p>
+        For this assignment we were tasked to:<br /><br />
+        <h3> 1) Make a construction kit that uses 10 clips (designed in Grasshopper) to connect pieces of cardboard in grasshopper </h3>
+        For this task I wanted to build something that I can turn into a shelving unit later on, and I wanted the clips to be part of the design. So I started by sketching the image below: <br /><br />
+        <img src="A3/images/Model.jpg" height="400" align="middle">  
+        <br />
+        <br />
+        Once I was happy with my drawing, I started identifying how the model needs to be shaped. I essentially needed to create clips that allowing me to connect pieces using multiple 60 degree angles. <br />
+        From there, I created this <a src="A3/3dm+gh/P1.gh" style ="color:#FF7733">Grasshopper</a> model here that resulted directly in this <a src="A3/3dm+gh/P1.3dm" style ="color:#FF7733">.3dm</a> file, and looked like this <a src="A3/stl/P1-2.stl" style ="color:#FF7733">.stl</a> screenshot below: <br /><br />
+        <img src="A3/images/P1-2.png" height="400" align="middle">  
+        <img src="A3/images/P1-3.png" height="400" align="middle">  
+        <img src="A3/images/P1-4.png" height="400" align="middle">  
+        <br />
+        
+        By doing so I was able to put this final image together that can be shaken with no impact (<a src="A3/stl/P1-2.stl" style ="color:#FF7733">gcodes</a>!)<br /><br />
+        <img src="A3/images/P1.jpg" height="400" align="middle">  
+        <img src="A3/images/GIF.gif" height="400" align="middle"> 
+        <br /><br />
+        <br /><br />
+
+        <h3> 2) Making nested objects using Grasshopper! </h3>
+        
+        I began this section by creating the following in <a src="A3/3dm+gh/P2-E.gh" style ="color:#FF7733">Grasshopper</a> using Jasper’s tutorials<br />
+        <img src="A3/images/BeansAlone.png" height="400" align="middle">  
+        <br />
+        <br />
+        Then, continued by moving the items around in Rhino (<a src="A3/3dm+gh/P1.3dm" style ="color:#FF7733">.3dm </a>) file since achieving it in grasshopper would’ve been very difficult to get to this: <br />
+        <img src="A3/images/BeansCamping.png" height="400" align="middle">  
+        <br />
+        <br />
+        From here, I cut through the model by grabbing a boolean difference using a rectangle turned into cruves in order to create a “look out view” (<a src="A3/3dm+gh/P1.3dm" style ="color:#FF7733">.stl</a> & <a src="A3/3dm+gh/P1.3dm" style ="color:#FF7733">gcodes!</a>):<br />
+        <img src="A3/images/BeansFinal.png" height="400" align="middle"> 
+        <img src="A3/images/Beans.png" height="400" align="middle">  
+        <br />
+        <br />
+        
+        </p>			
+		<br />
+    <br />
     <br />
 	<br />
     <a href="index.html" style ="color:#FF7733; text-align:center"><h2>Back to home</h2>
